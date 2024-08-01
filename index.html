@@ -11,8 +11,8 @@
 </head>
 <body>
     <h1>Find Your House</h1>
-    <p>Enter your Employee ID to find your house:</p>
-    <input type="text" id="employeeId" placeholder="Enter Employee ID">
+    <p>Enter your Empail ID to find your house:</p>
+    <input type="text" id="employeeId" placeholder="Enter Email ID">
     <button onclick="lookupHouse()">Find House</button>
     <p id="result"></p>
 
@@ -658,7 +658,7 @@
 
         function lookupHouse() {
             const employeeId = document.getElementById('employeeId').value.trim().toUpperCase();
-            const result = lookupTable[employeeId] || "Employee ID not found!";
+            const result = lookupTable[employeeId] || "Email ID not found!";
             document.getElementById('result').innerText = result;
         }
     </script>
