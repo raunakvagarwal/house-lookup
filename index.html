@@ -5,21 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Lookup</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        input, button { margin: 10px; padding: 10px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+            background: linear-gradient(to bottom, #3a6186, #89253e); 
+            color: #ffffff;
+        }
+        input, button { 
+            margin: 10px; 
+            padding: 10px; 
+            border: none; 
+            border-radius: 5px;
+        }
+        button { 
+            background-color: #4CAF50; 
+            color: white; 
+            cursor: pointer; 
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Find Your House</h1>
-    <p>Enter your Email ID to find your house:</p>
-    <input type="text" id="emailId" placeholder="Enter Email ID">
-    <button onclick="lookupHouse()">Find House</button>
-    <p id="result"></p>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Find Your House</h1>
+        <p>Enter your Email ID to find your house:</p>
+        <input type="text" id="emailId" placeholder="Enter Email ID">
+        <button onclick="lookupHouse()">Find House</button>
+        <p id="result"></p>
+    </div>
 
     <script>
         // Lookup table with email IDs as keys
         const lookupTable = {
-           "andrew.fishell@zs.com": "Orion",
+            "andrew.fishell@zs.com": "Orion",
 "abhishek.chatterji@zs.com": "Falcon",
 "abhishek.chakroborty@zs.com": "Orion",
 "ashwani.singh@zs.com": "Falcon",
