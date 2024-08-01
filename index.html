@@ -37,8 +37,10 @@
             width: 150px;
             margin-bottom: 20px;
         }
-        .house-image {
+        .house-container {
             margin-top: 20px;
+        }
+        .house-image {
             width: 150px;
             display: none;
         }
@@ -51,8 +53,10 @@
         <p>Enter your Email ID to find your house:</p>
         <input type="text" id="emailId" placeholder="Enter Email ID">
         <button onclick="lookupHouse()">Find House</button>
-        <p id="result"></p>
-        <img id="houseImage" class="house-image" src="" alt="House Image">
+        <div class="house-container">
+            <p id="result"></p>
+            <img id="houseImage" class="house-image" src="" alt="House Image">
+        </div>
     </div>
 
     <script>
