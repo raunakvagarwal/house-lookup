@@ -113,6 +113,8 @@
         <button class="bottom-button" onclick="openModal('genignite.png')">What is GenIgnite?</button>
         <button class="bottom-button" onclick="openModal('captains.png')">Know your Captains</button>
         <button class="bottom-button" onclick="openModal('scoring.png')">Scoring Mechanism</button>
+        <button class="bottom-button" onclick="openModal('comingsoon.png')">GenAI Genius Winners</button>
+        <button class="bottom-button" onclick="openModal('coreteam.png')">Meet the Core Team</button>
     </div>
     </div>
 
@@ -152,7 +154,6 @@
                 modal.style.display = "none";
             }
         }
-
         // Lookup table with email IDs as keys and house info as values
         const lookupTable = {
             "andrew.fishell@zs.com": { house: "Orion", image: "Orion.png" },
@@ -794,7 +795,7 @@
             // Add all your email ID to house mappings here
         };
 
-        function lookupHouse() {
+      function lookupHouse() {
             const emailId = document.getElementById('emailId').value.trim().toLowerCase();
             console.log("Entered Email ID: " + emailId); // Debugging statement
             const result = lookupTable[emailId];
